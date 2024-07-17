@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services - المصطفى للاعلانات Al Mustafa ads</title>
+    <link rel="icon" href="mus.jpg">
+    <link rel="stylesheet" href="services.css">
+    </head>
+<body>
+
+    <header id="header"
+    style="position: sticky;
+    z-index: 1000;">
+     <div class="container">
+        <h1 id="all">Al Mustafa ads</h1>
+        <img src="whw.jpg"width="109px"
+        id="imm"> 
+    </div>
+    <a href="sign up.html" class="login-btn">sign up</a>
+
+        <nav id="nav">
+            <ul>
+                <li id="in"><a href="index.html">Home</a></li>
+                <li id="se"><a href="services.html">Services</a></li>
+                <li id="po"><a href="portfolio.html">portfolio <h4 id="fh">🌟</h4></a></li>
+                <li id="ab"><a href="about us.html">About Us</a></li>
+                <li id="co"><a href="contact us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js">
+       let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Downscroll code
+        header.classList.add('hidden');
+        header.classList.remove('show');
+    } else {
+        // Upscroll code
+        header.classList.remove('hidden');
+        header.classList.add('show');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+    </script>
+<script>
+
+    lastScrollTop = 0;
+   var nav = document.getElementById("header");
+   
+   window.addEventListener("scroll", function() {
+       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   
+       if (scrollTop > lastScrollTop) {
+           // Downscroll code
+           nav.classList.remove("show");
+       } else {
+           // Upscroll code
+           nav.classList.add("show");
+       }
+       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+   }, false);
+   
+   
+   
+   </script>
+<section id="home" class="hero">
+    <div class="container">
+        <h1> Unlock Your Brand's Potential with Our Services</h1>
+        <p>Advertising | Marketing | Montage</p>
+        <a href="#he" class="btn">Get Started</a>
+    </div>
+</section>
+<br>
+<h1 id="he">Here's how we can help:</h1>
+<br>
+<main>
+    <section class="gallery">
+
+        <br>
+        <section id="dd">
+            <div class="item">
+                <img src="vv.jpg">
+                <div class="overlay active">
+                    <h3>Advertising Department</h3>
+                    <p>Discover tailored strategies to enhance your brand's visibility and engage your audience with precision.</p>
+                </div>
+            </div>
+            <section class="gallery">
+
+            <div class="section">
+                <div class="ad-block">
+        <h3>Strategic Advertising Campaigns</h3>
+        <p>Reach your audience effectively with tailored advertising solutions.</p>
+        <ul>
+            <li>Customized campaigns aligned with your brand's goals</li>
+            <li>Targeted advertising strategies for maximum engagement</li>
+            <li>Analytics-driven approach to optimize ROI</li>
+        </ul>
+        <a href="Advertising Department.html" class="btn">Learn More</a>
+
+    </div>
+    </div>
+        </section>
+    </section>
+        <br>
+        <section id="sa">
+            <div class="item">
+                <img src="mar.jpg">
+                <div class="overlay active">
+                    <h3>Marketing Department</h3>
+                    <p>Elevate your brand's influence with strategic marketing solutions designed to boost engagement and drive growth.</p>
+                </div>
+            </div>
+            <section class="gallery">
+
+            <div class="section">
+                <div class="ad-block">
+                    <h3>Digital Marketing Strategies</h3>
+                    <p>SEO and SEM strategies to boost visibility, Social media marketing to engage and convert, and Email marketing campaigns for effective communication.</p>
+                    <ul>
+                        <li>SEO and SEM strategies to boost visibility</li>
+                        <li>Social media marketing to engage and convert</li>
+                        <li>Email marketing campaigns for effective communication</li>
+                    </ul>
+                    <a href="Marketing Department.html" class="btn">Learn More</a>
+                </div>
+    </div>
+        </section>
+    </section>
+    <br>
+    <section id="as">
+        <div class="item">
+            <img src="mo.jpg">
+            <div class="overlay active">
+                <h3>Montage Department</h3>
+                <p>Our expert team delivers precision editing and creative montage techniques to elevate your content</p>
+            </div>
+        </div>
+        <section class="gallery">
+
+        <div class="section">
+            <div class="ad-block">
+                <h3>Video Montage and Editing Services</h3>
+                <p>High-quality video editing and montage services, professional production and post-production expertise, and customized video content for various platforms.</p>
+                <ul>
+                    <li>High-quality video editing and montage services</li>
+                    <li>Professional production and post-production expertise</li>
+                    <li>Customized video content for various platforms</li>
+                </ul>
+                <a href="Montage Department.html" class="btn">Learn More</a>
+            </div>
+</div>
+    </section>
+</section>
+    <br>
+            </div>
+        
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+        <!-- Add more items as needed -->
+    </section>
+    <script>
+        // JavaScript to toggle .active class on click
+        const items = document.querySelectorAll('.item');
+    
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</main>
+
+<footer>
+    <div class="container">
+        <section class="social-icon">
+            <h4>Our social media:</h4>
+            
+                        <a href="https://www.facebook.com/profile.php?id=61560669824955&mibextid=ZbWKwL" class="social-icon-facebook"><img src="facebook.png" width="60" alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/@al.mustafa.ads?_t=8naAC7eY0tk&_r=1" class="social-icon-tiktok"><img src="tiktok.png" width="60px" alt="tiktok"></a>
+                        <a href="https://www.instagram.com/al_mustafa_ads?igsh=MWg1Nmc1aGliNjh0Nw==" class="social-icon-instagram"><img src="instagram.jpg" width="60" alt="Instagram"></a>
+                        <a href="https://youtube.com/@almustafa2ads?si=v2SKZVgIBFMXdSvj" class="social-icon-youtube"><img src="youtube.png" width="75" alt="youtube"></a>
+                        <a href="mailto:Almustafa2ads@gmail.com" class="social-icon-E-mail"><img src="E-mail.png" width="75" alt="E-mail"></a>
+                        <div class="social-icon">
+                            <a href="https://x.com/almustafa_ads?t=y-FN21yxR6zOjN44cDBH2Q&s=09" class="social-icon-x"><img src="x.png" width="60" alt="x"></a>
+                            <a href="https://t.me/almustafaADS" class="social-icon-Telegram"><img src="Telegram.png" width="60" alt="Telegram"></a>
+                            <a href="https://www.linkedin.com/in/al-mustafa-ads-%D8%A7%D9%84%D9%85%D8%B5%D8%B7%D9%81%D9%89-%D9%84%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-506b92318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon-Linkedin"><img src="Linkedin.png" width="60" alt="Linkedin"></a>
+                            <a href="https://www.snapchat.com/add/almustafaads?share_id=CQxZQjpNQx0&locale=en-IQ" class="social-icon-snapchat"><img src="snapchat.png" width="60" alt="snapchat"></a>
+                            <a href="https://pin.it/4b537Wxjs" class="social-icon-pinterest"><img src="pinterest.png" width="60" alt="pinterest"></a>
+            
+            
+                        </div>
+                        </section>
+        <br>
+        <br>
+        <p>&copy; 2024 المصطفى للاعلانات Al Mustafa ads. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,481 @@
+     /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+.hidden {
+  top: -100px; /* Adjust as needed */
+}
+
+.show {
+  top: 0;
+}
+#all {
+ 
+  margin-left: 100px;
+  
+
+}
+
+#imm {
+position: absolute;
+left: 2px;
+margin-top: -60px;
+   border-radius: 10px 10px 10px 10px ;
+   
+
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+text-align: center;}
+
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+
+}
+nav ul #ab a {
+      background-color: rgb(55, 103, 107); padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+#header {
+  position: fixed;
+  top: -150px; /* Adjust this value based on your navbar height */
+  width: 100%;
+  transition: top 0.3s ease-in-out; /* Smooth transition for animation */
+      z-index: 1000;
+}
+
+#header.show {
+  top: 0;
+}
+
+nav ul li a  {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  
+}
+nav a:hover { background-color: rgb(151, 181, 184); padding: 10px;
+  transition: color 0.3s ease-in-out;color: black; border-radius: 5px 5px 5px 5px; }
+nav a {
+  color: rgb(0, 0, 0); /* Default color */
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(0, 81, 255); /* Color changes to blue on hover */
+}
+nav ul #po a:hover {
+  color: rgb(0, 81, 255); /* Color changes to red on hover */
+
+} 
+#fh {
+  color: gold;
+  display: inline;
+}
+nav ul #po a {
+  color: rgb(255, 0, 0);
+}
+
+nav ul #ab a {
+  color: rgb(0, 81, 255);
+
+}
+.login-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+          opacity: 0.9;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #008006; /* Darker Green */
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+    section#about {
+        padding: 450px 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about us.jpg");
+            background-size: cover;
+        background-position: center;
+        text-indent: 30px;
+
+    }
+    
+    section#about h2 {
+        margin-bottom: 20px;
+        color: rgba(52, 225, 255, 0.979);
+        text-indent: 30px;
+
+    }
+    
+    section#about p {
+        margin-bottom: 15px;
+        color: rgb(255, 255, 255);
+        
+    }
+    
+    section#about ul {
+        margin-bottom: 15px;
+        color: rgb(220, 230, 94);
+        text-indent: 30px;
+
+    }
+    #h1 {
+      color: rgba(52, 225, 255, 0.979);
+      text-indent: 30px;
+margin-left: 30px;
+
+    }
+
+#zzz {
+  color: rgb(226, 226, 226);
+  text-indent: 30px;
+  margin-left: 30px;
+
+}
+.aaa {
+  background-color: #333;
+  text-indent: 30px;
+
+}
+section.aaa h2 {
+  margin-bottom: 20px;
+  color: rgba(52, 225, 255, 0.979);
+  text-indent: 30px;
+  margin-left: 30px;
+
+}
+
+section.aaa p {
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  text-indent: 30px;
+  margin-left: 30px;
+
+}
+
+section.aaa ul {
+  margin-bottom: 15px;
+  color: rgb(220, 230, 94);
+  text-indent: 30px;
+  margin-left: 30px;
+
+}
+#h1 {text-indent: 30px;
+
+color: rgba(52, 225, 255, 0.979);
+}
+
+#pep {
+  color: rgba(33, 243, 61, 0.925);
+  text-shadow:0 0 5px rgb(0, 59, 3);
+  font-size: 18px;
+  margin-left: -3px;
+}
+
+    /* Footer styles */
+footer {
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+.social-icon-facebook img {
+    
+  border-radius: 15% 15% 15% 15%; 
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  background-color: rgb(248, 249, 250);
+}
+
+.social-icon-tiktok img {
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  border-radius: 15% 15% 15% 15%; 
+}
+
+.social-icon-instagram img {
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  border-radius: 25% 25% 25% 25%; 
+}
+
+.social-icon-tiktok {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+}
+
+.social-icon-youtube img {
+  border-radius: 30% 30% 30% 30%; 
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+}
+
+.social-icon-E-mail img {
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+  border-radius: 15% 15% 15% 15%; 
+}
+
+.social-icon-x img {
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 23px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.social-icon-Telegram img {
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 20px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.social-icon-Linkedin img {
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 20px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.social-icon-snapchat img {
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+.social-icon-pinterest img {
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 35px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+/* effect */
+
+
+.social-icon-facebook:hover {
+  opacity: 0.7;
+}
+
+.social-icon-tiktok
+:hover {
+    opacity: 0.7;
+}
+
+.social-icon-instagram:hover {
+  opacity: 0.7;
+}
+.social-icon-tiktok:hover {
+  opacity: 0.7;
+}
+
+.social-icon-youtube:hover {
+  opacity: 0.7;
+}
+
+.social-icon-E-mail:hover {
+  opacity: 0.7;
+}
+
+.social-icon-x:hover {
+  opacity: 0.7;
+}
+
+.social-icon-Telegram:hover {
+  opacity: 0.7;
+}
+.social-icon-Linkedin:hover {
+  opacity: 0.7;
+}
+.social-icon-snapchat:hover {
+  opacity: 0.7;
+}
+.social-icon-pinterest:hover {
+  opacity: 0.7;
+}
+
+
+
+/* img */
+.social-icon-E-mail img  {
+  
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+}
+
+
+.social-icon-facebook img  {
+  
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+}
+.social-icon-instagram img {
+  
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+}
+
+.social-icon-youtube img  {
+  
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+}
+
+.social-icon-tiktok img  {
+  
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+}
+
+.social-icon-x img  {
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+
+}
+
+.social-icon-Telegram img  {
+
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+  background-color: #ffffff;
+}
+
+.social-icon-Linkedin img  {
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+  background-color: #ffffff;
+}
+
+.social-icon-snapchat img  {
+
+  border: 2px solid transparent;
+  
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+  background-color: #ffffff;
+}
+.social-icon-pinterest img  {
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  animation: colorChange 5s infinite linear;
+  background-color: #ffffff;
+}
+
+  @keyframes colorChange {
+    0% {
+      border-color: rgb(219, 46, 46);
+    }
+
+    10%{
+        border-color: rgb(206, 155, 46);
+    }
+    
+    20% {
+      border-color: rgb(209, 209, 49);
+    }
+    30% {
+      border-color: rgb(39, 197, 39);
+    }
+    40% {
+      border-color: rgb(45, 189, 199);
+    }
+    50% {
+      border-color: rgb(53, 62, 190);
+    }
+    60%{
+        border-color: rgb(126, 51, 196);
+  }
+
+  70%{
+    border-color: rgb(196, 54, 184);
+}  
+
+80%{
+    border-color: rgb(199, 50, 112);
+}
+
+90%{
+    border-color: rgb(187, 42, 78);
+}
+100% {
+    border-color: rgb(201, 46, 46);  
+}
+}
+

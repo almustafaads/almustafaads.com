@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - المصطفى للاعلانات Al Mustafa ads</title>
+    <link rel="stylesheet" href="contact us.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="mus.jpg">
+
+</head>
+<body>
+    <header id="header"
+    style="position: sticky;
+    z-index: 1000;">
+    <div class="container">
+        <h1 id="all">Al Mustafa ads</h1>
+        <img src="whw.jpg"width="109px"
+        id="imm"> 
+    </div>
+    <a href="sign up.html" class="login-btn">sign up</a>
+
+        <nav id="nav">
+            <ul>
+                <li id="in"><a href="index.html">Home</a></li>
+                <li id="se"><a href="services.html">Services</a></li>
+                <li id="po"><a href="portfolio.html">portfolio <h4 id="fh">🌟</h4></a></li>
+                <li id="ab"><a href="about us.html">About Us</a></li>
+                <li id="co"><a href="contact us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js">
+        let lastScrollTop = 0;
+ const header = document.getElementById('header');
+ 
+ window.addEventListener('scroll', () => {
+     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+ 
+     if (scrollTop > lastScrollTop) {
+         // Downscroll code
+         header.classList.add('hidden');
+         header.classList.remove('show');
+     } else {
+         // Upscroll code
+         header.classList.remove('hidden');
+         header.classList.add('show');
+     }
+     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+ });
+     </script>
+ 
+ 
+ <script>
+ 
+  lastScrollTop = 0;
+ var nav = document.getElementById("header");
+ 
+ window.addEventListener("scroll", function() {
+     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+ 
+     if (scrollTop > lastScrollTop) {
+         // Downscroll code
+         nav.classList.remove("show");
+     } else {
+         // Upscroll code
+         nav.classList.add("show");
+     }
+     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+ }, false);
+ 
+ 
+ 
+ </script>
+    <section class="contact ">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email"  placeholder="Enter your E-mail..." name="email" required>
+                    </div>
+                    <label for="name">Country</label>
+                        <input type="text" id="Country" placeholder="Enter your Country..." required>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your massage..."  rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+ 
+                </form>
+                
+            </div>
+        </div>
+        
+        
+     
+    </section>
+
+<section class="service-section">
+  <div class="container">
+    <div class="content">
+      <h2>Contact us today for comprehensive advertising, marketing, and montage services.</h2>
+      <p>Our experienced team is dedicated to delivering impactful strategies that resonate with your target audience.</p>
+    </div>
+  </div>
+</section>
+
+
+
+        
+      <br>
+      <section cco>
+        <h2 id="ccco">You can contact us on our social media below</h2>
+      </section>
+    <footer>
+        <div class="container">
+            <section class="social-icon">
+                <h4>Our social media:</h4>
+                
+                            <a href="https://www.facebook.com/profile.php?id=61560669824955&mibextid=ZbWKwL" class="social-icon-facebook"><img src="facebook.png" width="60" alt="Facebook"></a>
+                            <a href="https://www.tiktok.com/@al.mustafa.ads?_t=8naAC7eY0tk&_r=1" class="social-icon-tiktok"><img src="tiktok.png" width="60px" alt="tiktok"></a>
+                            <a href="https://www.instagram.com/al_mustafa_ads?igsh=MWg1Nmc1aGliNjh0Nw==" class="social-icon-instagram"><img src="instagram.jpg" width="60" alt="Instagram"></a>
+                            <a href="https://youtube.com/@almustafa2ads?si=v2SKZVgIBFMXdSvj" class="social-icon-youtube"><img src="youtube.png" width="75" alt="youtube"></a>
+                            <a href="mailto:Almustafa2ads@gmail.com" class="social-icon-E-mail"><img src="E-mail.png" width="75" alt="E-mail"></a>
+                            <div class="social-icon">
+                                <a href="https://x.com/almustafa_ads?t=y-FN21yxR6zOjN44cDBH2Q&s=09" class="social-icon-x"><img src="x.png" width="60" alt="x"></a>
+                                <a href="https://t.me/almustafaADS" class="social-icon-Telegram"><img src="Telegram.png" width="60" alt="Telegram"></a>
+                                <a href="https://www.linkedin.com/in/al-mustafa-ads-%D8%A7%D9%84%D9%85%D8%B5%D8%B7%D9%81%D9%89-%D9%84%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-506b92318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon-Linkedin"><img src="Linkedin.png" width="60" alt="Linkedin"></a>
+                                <a href="https://www.snapchat.com/add/almustafaads?share_id=CQxZQjpNQx0&locale=en-IQ" class="social-icon-snapchat"><img src="snapchat.png" width="60" alt="snapchat"></a>
+                                <a href="https://pin.it/4b537Wxjs" class="social-icon-pinterest"><img src="pinterest.png" width="60" alt="pinterest"></a>
+                
+                
+                            </div>
+                            </section>
+            <br>
+            <br>
+            <p>&copy; 2024 المصطفى للاعلانات Al Mustafa ads. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
