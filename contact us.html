@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us - المصطفى للاعلانات Al Mustafa ads</title>
-    <link rel="stylesheet" href="contact us.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="contact us.css">
     <link rel="icon" href="mus.jpg">
-
+   
 </head>
 <body>
     <header id="header"
@@ -16,7 +16,6 @@
         <img src="whw.jpg"width="109px"
         id="imm"> 
     </div>
-    <a href="sign up.html" class="login-btn">sign up</a>
 
         <nav id="nav">
             <ul>
@@ -70,53 +69,62 @@
  
  
  </script>
-    <section class="contact ">
+    
+    <section class="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-form">
-                <form action="submit_form.php" method="POST">
+                <form id="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter your name..." required>
+                        <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email"  placeholder="Enter your E-mail..." name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your E-mail..." required>
                     </div>
-                    <label for="name">Country</label>
-                        <input type="text" id="Country" placeholder="Enter your Country..." required>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Enter your Country..." required>
+                    </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Enter your massage..."  rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your message..." rows="5" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
- 
                 </form>
-                
             </div>
         </div>
-        
-        
-     
     </section>
 
-<section class="service-section">
-  <div class="container">
-    <div class="content">
-      <h2>Contact us today for comprehensive advertising, marketing, and montage services.</h2>
-      <p>Our experienced team is dedicated to delivering impactful strategies that resonate with your target audience.</p>
-    </div>
-  </div>
-</section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Replace with your actual User ID from EmailJS
+        emailjs.init("JHyCYtY73nkUcYAnY"); 
 
-
-
-        
-      <br>
-      <section cco>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            emailjs.sendForm('service_hlasm5v', 'template_moecmha', this)
+                .then(function(response) {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Failed to send message.');
+                });
+        });
+    </script>
+    <section class="service-section">
+        <div class="container">
+          <div class="content">
+            <h2>Contact us today for comprehensive advertising, marketing, and montage services.</h2>
+            <p>Our experienced team is dedicated to delivering impactful strategies that resonate with your target audience.</p>
+          </div>
+        </div>
+      </section>
+      <section cco="">
         <h2 id="ccco">You can contact us on our social media below</h2>
       </section>
-    <footer>
+     <footer>
         <div class="container">
             <section class="social-icon">
                 <h4>Our social media:</h4>
