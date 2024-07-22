@@ -92,24 +92,31 @@
                         <textarea id="message" name="message" placeholder="Enter your message..." rows="5" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
+                    <div id="success-message" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid green; background-color: #d4edda; color: green;">
+                        Message sent successfully!
+                    </div>
+                    <div id="error-message" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid red; background-color: #f8d7da; color: red;">
+                        Failed to send message.
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        // Replace with your actual User ID from EmailJS
-        emailjs.init("JHyCYtY73nkUcYAnY"); 
+   
 
+    <script>
+        emailjs.init("JHyCYtY73nkUcYAnY"); // Replace with your actual User ID
+    
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             
             emailjs.sendForm('service_hlasm5v', 'template_moecmha', this)
                 .then(function(response) {
-                    alert('Message sent successfully!');
+                    window.location.href = "mesg.html"; // Redirect to success page
                 }, function(error) {
-                    alert('Failed to send message.');
+                    document.getElementById('error-message').style.display = 'block';
                 });
         });
     </script>
