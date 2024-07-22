@@ -17,6 +17,7 @@
         <img src="whw.jpg"width="109px"
         id="imm"> 
     </div>
+
         <nav id="nav">
             <ul>
                 <li id="in"><a href="index.html">Home</a></li>
@@ -101,19 +102,100 @@
             <div class="item">
                 <img src="ww.jpg">
                 <div class="overlay">
-                    <div>
-                        
-                    </div>
                     <h3>Create your project with us</h3>
                     <p>and we will achieve our dreams together</p>
                 </div>
             </div>
             <div class="item">
                 <h2 id="h22">On this page, we will publish the works that we present to you and also to market and advertise them, as well as the videos that we edit, so let's achieve our dreams and start together. </h2>
-
             </div>
             
         </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+    
+
+#h22 {
+  background-color: #eaeaea;
+  color: rgb(0, 191, 213);
+  text-shadow: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 15px;
+  width: 480px;
+  height: 470px;
+}
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        background-color: #ffffff;
+
+    }
+    
+    .item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        max-width: 100%;
+
+    }
+   
+    /* قاعدة @media للشاشات الصغيرة */
+@media (max-width: 100%) {
+  .item {
+    position: relative;
+    padding-bottom: 56.25%; /* نسبة العرض إلى الارتفاع للفيديو 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+  }
+
+  .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+        </style>
+    </head>
+    <body>
+    <main>
+<section class="gallery">
+    <div class="item">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BXzJR5c4r3s?si=EELukEClHeueiWAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+    </div>
+    <div class="item">
+        <h2 id="h22">On this page, we will publish the works that we present to you and also to market and advertise them, as well as the videos that we edit, so let's achieve our dreams and start together. </h2>
+
+    </div>
+    
+</section>
+</main>
+</body>
+</html>
             <!-- Add more items as needed -->
         </section>
         <section class="cx">
