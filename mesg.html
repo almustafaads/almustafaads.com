@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success - المصطفى للاعلانات Al Mustafa ads</title>
+    <link rel="stylesheet" href="styles.css"> <!-- رابط لملف CSS لتنسيق الصفحة -->
+    <link rel="icon" href="mus.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .success-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .success-container h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .success-container p {
+            font-size: 18px;
+            color: #333;
+        }
+        .success-container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .success-container a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Message Sent Successfully!</h1>
+        <p>Thank you for contacting us. We will get back to you shortly.</p>
+        <a href="index.html">Return to Home</a>
+    </div>
+</body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+emailjs.init("JHyCYtY73nkUcYAnY"); // Replace with your actual User ID
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_hlasm5v', 'template_moecmha', this)
+        .then(function(response) {
+            window.location.href = 'success.html'; // إعادة التوجيه إلى صفحة النجاح
+        }, function(error) {
+            alert('Failed to send message.'); // عرض رسالة خطأ في حالة الفشل
+        });
+});
+
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Downscroll code
+        header.classList.add('hidden');
+        header.classList.remove('show');
+    } else {
+        // Upscroll code
+        header.classList.remove('hidden');
+        header.classList.add('show');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+</script>
+</html>
